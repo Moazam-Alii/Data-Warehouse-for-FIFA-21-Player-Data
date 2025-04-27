@@ -1,8 +1,8 @@
--- Use or create the database
+
 CREATE DATABASE IF NOT EXISTS fifa_star_schema;
 USE fifa_star_schema;
 
--- Drop fact table first (to handle FK dependencies)
+
 DROP TABLE IF EXISTS fact_player_stats;
 
 -- Drop dimension tables
@@ -11,7 +11,6 @@ DROP TABLE IF EXISTS dim_club;
 DROP TABLE IF EXISTS dim_country;
 DROP TABLE IF EXISTS dim_position;
 
--- Recreate dimension tables
 
 CREATE TABLE dim_player (
     player_id INT AUTO_INCREMENT PRIMARY KEY,
