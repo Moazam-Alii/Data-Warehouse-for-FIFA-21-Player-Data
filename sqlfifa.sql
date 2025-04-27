@@ -5,7 +5,7 @@ USE fifa_star_schema;
 
 DROP TABLE IF EXISTS fact_player_stats;
 
--- Drop dimension tables
+
 DROP TABLE IF EXISTS dim_player;
 DROP TABLE IF EXISTS dim_club;
 DROP TABLE IF EXISTS dim_country;
@@ -35,7 +35,7 @@ CREATE TABLE dim_position (
     player_position VARCHAR(50)
 );
 
--- Recreate fact table
+
 
 CREATE TABLE fact_player_stats (
     stat_id INT AUTO_INCREMENT PRIMARY KEY,
